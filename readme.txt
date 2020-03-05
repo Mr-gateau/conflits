@@ -57,4 +57,33 @@ From https://github.com/Mr-gateau/conflits
 Auto-merging readme.txt
 CONFLICT (content): Merge conflict in readme.txt
 Automatic merge failed; fix conflicts and then commit the result.
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git pull
+error: Pulling is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git add .
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git commit -m "modification"
+[master 2670dc1] modification
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git push
+Username for 'https://github.com':    
+Password for 'https://github.com': 
+remote: No anonymous write access.
+fatal: Authentication failed for 'https://github.com/Mr-gateau/conflits.git/'
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From https://github.com/Mr-gateau/conflits
+   a34688b..53f288a  master     -> origin/master
+Auto-merging readme.txt
+CONFLICT (content): Merge conflict in readme.txt
+Automatic merge failed; fix conflicts and then commit the result.
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git add .
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git commit -m "test encore"
+[master e3ec8a9] test encore
+wilder@wilder-ThinkPad-T430:~/conflits/conflits$ git pull
+Already up to date.
 wilder@wilder-ThinkPad-T430:~/conflits/conflits$ 
